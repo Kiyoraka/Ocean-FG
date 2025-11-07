@@ -349,7 +349,7 @@
 
 .vision-card,
 .mission-card {
-    background: #2D2D2D;
+    background: var(--color-primary);
     padding: var(--spacing-10);
     border-radius: var(--radius-2xl);
     transition: all var(--transition-base);
@@ -375,19 +375,19 @@
     color: var(--color-white);
 }
 
-/* Hover state: black text on white background */
+/* Hover state: blue text on white background */
 .vision-card:hover .vm-title,
 .mission-card:hover .vm-title {
-    color: var(--color-black);
+    color: var(--color-primary);
 }
 
 .vision-card:hover .vm-text,
 .mission-card:hover .vm-text {
-    color: var(--color-black);
+    color: var(--color-primary);
 }
 
 .mission-card:hover .mission-list li {
-    color: var(--color-black);
+    color: var(--color-primary);
 }
 
 .vm-icon {
