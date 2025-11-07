@@ -550,6 +550,9 @@
     font-weight: var(--font-weight-bold);
     color: var(--color-black);
     margin-bottom: var(--spacing-4);
+    min-height: 3.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .service-description {
