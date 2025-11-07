@@ -211,7 +211,7 @@ ol.list-decimal li {
 /* Strong & Em */
 strong {
     font-weight: var(--font-weight-bold);
-    color: var(--color-gray-900);
+    color: var(--color-black);
 }
 
 em {

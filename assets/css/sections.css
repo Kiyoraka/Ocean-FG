@@ -288,7 +288,7 @@
 .about-intro {
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-medium);
-    color: var(--color-gray-900);
+    color: var(--color-black);
     margin-bottom: var(--spacing-6);
 }
 
