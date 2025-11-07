@@ -348,7 +348,7 @@
 
 .vision-card,
 .mission-card {
-    background: var(--color-gray-100);
+    background: var(--color-gray-900);
     padding: var(--spacing-10);
     border-radius: var(--radius-2xl);
     transition: all var(--transition-base);
@@ -359,6 +359,34 @@
     background: var(--color-white);
     box-shadow: var(--shadow-xl);
     transform: translateY(-4px);
+}
+
+/* Normal state: white text on dark background */
+.vm-title {
+    color: var(--color-white);
+}
+
+.vm-text {
+    color: var(--color-white);
+}
+
+.mission-list li {
+    color: var(--color-white);
+}
+
+/* Hover state: black text on white background */
+.vision-card:hover .vm-title,
+.mission-card:hover .vm-title {
+    color: var(--color-black);
+}
+
+.vision-card:hover .vm-text,
+.mission-card:hover .vm-text {
+    color: var(--color-black);
+}
+
+.mission-card:hover .mission-list li {
+    color: var(--color-black);
 }
 
 .vm-icon {
@@ -376,14 +404,12 @@
 .vm-title {
     font-size: var(--font-size-3xl);
     font-weight: var(--font-weight-bold);
-    color: var(--color-black);
     margin-bottom: var(--spacing-4);
 }
 
 .vm-text {
     font-size: var(--font-size-base);
     line-height: var(--line-height-relaxed);
-    color: var(--color-black);
     margin-bottom: var(--spacing-6);
 }
 
@@ -397,7 +423,6 @@
     margin-bottom: var(--spacing-3);
     position: relative;
     font-size: var(--font-size-sm);
-    color: var(--color-black);
 }
 
 .mission-list li::before {
