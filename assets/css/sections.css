@@ -508,6 +508,10 @@
     background: var(--color-gray-100);
 }
 
+.services .section-title {
+    color: var(--color-white);
+}
+
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -544,7 +548,7 @@
 .service-title {
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-bold);
-    color: var(--color-gray-900);
+    color: var(--color-black);
     margin-bottom: var(--spacing-4);
 }
 
