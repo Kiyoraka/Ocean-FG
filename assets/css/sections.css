@@ -303,15 +303,15 @@
 .stat-card {
     text-align: center;
     padding: var(--spacing-8);
-    background: var(--color-white);
+    background: var(--color-primary);
     border-radius: var(--radius-xl);
     transition: all var(--transition-base);
     box-shadow: var(--shadow-md);
 }
 
 .stat-card:hover {
-    background: var(--color-primary);
-    color: var(--color-white);
+    background: var(--color-white);
+    color: var(--color-black);
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
 }
@@ -319,12 +319,12 @@
 .stat-number {
     font-size: var(--font-size-5xl);
     font-weight: var(--font-weight-extrabold);
-    color: var(--color-primary);
+    color: var(--color-white);
     margin-bottom: var(--spacing-2);
 }
 
 .stat-card:hover .stat-number {
-    color: var(--color-white);
+    color: var(--color-primary);
 }
 
 .stat-label {
@@ -332,11 +332,11 @@
     font-weight: var(--font-weight-medium);
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: var(--color-primary);
+    color: var(--color-white);
 }
 
 .stat-card:hover .stat-label {
-    color: var(--color-white);
+    color: var(--color-primary);
 }
 
 /* Vision & Mission */
