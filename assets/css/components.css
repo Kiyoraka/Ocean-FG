@@ -132,7 +132,7 @@ label {
     display: block;
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-medium);
-    color: var(--color-gray-900);
+    color: var(--color-black);
     margin-bottom: var(--spacing-2);
 }
 
