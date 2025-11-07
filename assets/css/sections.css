@@ -450,7 +450,7 @@
     font-size: var(--font-size-3xl);
     font-weight: var(--font-weight-bold);
     margin-bottom: var(--spacing-12);
-    color: var(--color-gray-900);
+    color: var(--color-black);
 }
 
 .leadership-grid {
@@ -481,7 +481,7 @@
 .leader-name {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-bold);
-    color: var(--color-gray-900);
+    color: var(--color-black);
     margin-bottom: var(--spacing-2);
 }
 
