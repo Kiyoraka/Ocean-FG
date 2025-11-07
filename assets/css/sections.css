@@ -239,6 +239,7 @@
     font-weight: var(--font-weight-semibold);
     margin-bottom: var(--spacing-6);
     line-height: var(--line-height-tight);
+    color: var(--color-white);
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -248,6 +249,7 @@
     opacity: 0.95;
     margin-bottom: var(--spacing-10);
     max-width: 650px;
+    color: var(--color-white);
 }
 
 .hero-cta {
