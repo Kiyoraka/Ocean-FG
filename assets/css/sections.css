@@ -33,7 +33,7 @@
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.28125rem; /* 4.5px - 50% total reduction from spacing-2 (8px → 6px → 4.5px) */
+    gap: 0.140625rem; /* 2.25px - 71.875% total reduction from spacing-2 (8px → 6px → 4.5px → 2.25px) */
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-bold);
 }
