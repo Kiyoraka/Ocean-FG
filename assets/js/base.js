@@ -52,6 +52,9 @@ function initializeModules() {
         // 6. Contact Form (validation, submission)
         initForm();
 
+        // 7. Service Modals (popup details)
+        initModals();
+
         console.log('✅ All modules initialized successfully');
 
         // Optional: Add page load animation
@@ -99,12 +102,58 @@ function monitorPerformance() {
 // Optional: Enable performance monitoring in development
 // monitorPerformance();
 
+/**
+ * Service Modals System
+ * Handles popup modals for service details
+ */
+function initModals() {
+    // Make modal functions globally available for onclick handlers
+    window.openModal = openModal;
+    window.closeModal = closeModal;
+
+    // Close modal on ESC key press
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            const activeModal = document.querySelector('.service-modal.active');
+            if (activeModal) {
+                closeModal(activeModal.id);
+            }
+        }
+    });
+}
+
+/**
+ * Open Modal by ID
+ * @param {string} modalId - The ID of the modal to open
+ */
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.add('active');
+        // Prevent body scroll when modal is open
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+/**
+ * Close Modal by ID
+ * @param {string} modalId - The ID of the modal to close
+ */
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.remove('active');
+        // Restore body scroll
+        document.body.style.overflow = '';
+    }
+}
+
 // Start initialization
 init();
 
 /**
  * Export utilities for external use
  */
-export { init, initializeModules };
+export { init, initializeModules, openModal, closeModal };
 
 console.log('✅ Base module loaded - Ocean FG Website Ready');
