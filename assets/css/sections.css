@@ -53,7 +53,6 @@
 .logo-fg {
     color: var(--color-black);
     letter-spacing: 0.1em;
-    border: 2px solid var(--color-black);
     padding: var(--spacing-2) var(--spacing-4);
 }
 
