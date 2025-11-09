@@ -1205,7 +1205,7 @@
 }
 
 .modal-body {
-    color: var(--color-gray-800);
+    color: var(--color-black);
     line-height: var(--line-height-relaxed);
 }
 
