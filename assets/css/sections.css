@@ -220,14 +220,21 @@
     color: var(--color-white);
 }
 
-.hero-image {
+.hero-image-carousel {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    height: 650px;
 }
 
-.hero-image img {
+.hero-card {
+    position: absolute;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-card img {
     aspect-ratio: 9 / 16;
     max-width: 350px;
     max-height: 620px;
@@ -236,6 +243,24 @@
     object-fit: cover;
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-2xl);
+}
+
+.hero-card.active {
+    z-index: 3;
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+}
+
+.hero-card.middle {
+    z-index: 2;
+    transform: scale(0.95) translate(15px, 15px);
+    opacity: 0.6;
+}
+
+.hero-card.back {
+    z-index: 1;
+    transform: scale(0.9) translate(30px, 30px);
+    opacity: 0.3;
 }
 
 .hero-company {
@@ -1084,12 +1109,13 @@
         gap: var(--spacing-8);
     }
 
-    .hero-image {
+    .hero-image-carousel {
         width: 100%;
-        order: -1; /* Move image above text on mobile */
+        height: 450px;
+        order: -1; /* Move carousel above text on mobile */
     }
 
-    .hero-image img {
+    .hero-card img {
         max-width: 100%;
         max-height: 400px;
     }

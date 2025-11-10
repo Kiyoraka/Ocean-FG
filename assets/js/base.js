@@ -55,6 +55,9 @@ function initializeModules() {
         // 7. Service Modals (popup details)
         initModals();
 
+        // 8. Hero Carousel (auto-rotating cards)
+        initHeroCarousel();
+
         console.log('✅ All modules initialized successfully');
 
         // Optional: Add page load animation
@@ -120,6 +123,40 @@ function initModals() {
             }
         }
     });
+}
+
+/**
+ * Hero Carousel System
+ * Auto-rotating stacked card carousel
+ */
+function initHeroCarousel() {
+    const cards = document.querySelectorAll('.hero-card');
+    if (cards.length === 0) return;
+
+    let currentIndex = 0;
+
+    function rotateCards() {
+        // Remove all classes
+        cards.forEach(card => {
+            card.classList.remove('active', 'middle', 'back');
+        });
+
+        // Calculate indices for each position
+        const activeIdx = currentIndex;
+        const middleIdx = (currentIndex + 1) % cards.length;
+        const backIdx = (currentIndex + 2) % cards.length;
+
+        // Apply new classes
+        cards[activeIdx].classList.add('active');
+        cards[middleIdx].classList.add('middle');
+        cards[backIdx].classList.add('back');
+
+        // Move to next card
+        currentIndex = (currentIndex + 1) % cards.length;
+    }
+
+    // Auto-rotate every 4 seconds
+    setInterval(rotateCards, 4000);
 }
 
 /**
