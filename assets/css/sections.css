@@ -149,11 +149,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(0, 137, 208, 0.95) 0%, rgba(0, 107, 168, 0.9) 100%);
-    /* Placeholder for maritime image - will add opacity overlay */
-    /* background-image: url('../images/hero-maritime.jpg'); */
-    /* background-size: cover; */
-    /* background-position: center; */
+    background-image: url('../images/hero-ocean.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero-overlay {
