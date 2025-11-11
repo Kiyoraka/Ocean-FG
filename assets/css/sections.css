@@ -155,55 +155,6 @@
     background-repeat: no-repeat;
 }
 
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg,
-        rgba(0, 137, 208, 0.85) 0%,
-        rgba(0, 137, 208, 0.7) 50%,
-        rgba(0, 107, 168, 0.8) 100%
-    );
-}
-
-/* Diagonal Geometric Design (Matching PDF) */
-.hero-diagonal {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 50%;
-    overflow: hidden;
-    pointer-events: none;
-}
-
-.hero-diagonal::before {
-    content: '';
-    position: absolute;
-    top: -10%;
-    right: -5%;
-    width: 300px;
-    height: 120%;
-    background: linear-gradient(15deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-    transform: skewY(15deg);
-    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.2);
-}
-
-.hero-diagonal::after {
-    content: '';
-    position: absolute;
-    top: -10%;
-    right: 10%;
-    width: 250px;
-    height: 120%;
-    background: linear-gradient(15deg, rgba(191, 222, 0, 0.2) 0%, rgba(191, 222, 0, 0.1) 100%);
-    transform: skewY(15deg);
-    border-left: 3px solid var(--color-accent);
-    border-right: 3px solid rgba(255, 255, 255, 0.3);
-}
-
 /* Hero Content */
 .hero-content {
     position: relative;
